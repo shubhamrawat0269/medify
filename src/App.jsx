@@ -1,5 +1,11 @@
+import Home from "./pages/Home";
+
 function App() {
-  return <h1 className="underline">App</h1>;
+  return (
+    <div>
+      <Home />
+    </div>
+  );
 }
 
 export default App;

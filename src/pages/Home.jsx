@@ -1,7 +1,13 @@
-import React from "react";
+import { notificationMsg } from "../utils";
+import { NotificationModal, Navbar } from "../components/composer";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <>
+      <NotificationModal msg={notificationMsg} />
+      <Navbar />
+    </>
+  );
 };
 
 export default Home;
