@@ -1,6 +1,6 @@
 import React from "react";
 
-const elementor1 = () => {
+const Elementor1 = () => {
   return (
     <svg
       width="111"
@@ -42,4 +42,4 @@ const elementor1 = () => {
   );
 };
 
-export default elementor1;
+export default Elementor1;

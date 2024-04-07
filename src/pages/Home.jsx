@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <NotificationModal msg={notificationMsg} />
-      <Navbar />
+      <Navbar bgColor="bg-teal-50" />
     </>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 
-const GroupIcon = () => {
+const Logo = () => {
   return (
     <svg
       width="92"
@@ -27,4 +27,4 @@ const GroupIcon = () => {
   );
 };
 
-export default GroupIcon;
+export default Logo;
