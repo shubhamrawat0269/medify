@@ -82,3 +82,30 @@ export const discountCarouselData = [
     image: "images/pngs/service1.png",
   },
 ];
+
+export const doctorsList = [
+  {
+    id: 1,
+    image: "images/pngs/doctor-ahmed.png",
+  },
+  {
+    id: 2,
+    image: "images/pngs/doctor-ankur.png",
+  },
+  {
+    id: 3,
+    image: "images/pngs/doctor-heena.png",
+  },
+  {
+    id: 4,
+    image: "images/pngs/doctor-ahmed.png",
+  },
+  {
+    id: 5,
+    image: "images/pngs/doctor-ankur.png",
+  },
+  {
+    id: 6,
+    image: "images/pngs/doctor-heena.png",
+  },
+];

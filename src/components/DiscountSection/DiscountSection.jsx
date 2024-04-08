@@ -5,7 +5,7 @@ import { discountCarouselData } from "../../dummy/primeCardData";
 const DiscountSection = () => {
   return (
     <div className="m-12">
-      <Slider data={discountCarouselData} />
+      <Slider data={discountCarouselData} noOfSlides={3} />
     </div>
   );
 };

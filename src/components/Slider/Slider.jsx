@@ -3,12 +3,12 @@ import { A11y, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 
-const Slider = ({ data }) => {
+const Slider = ({ data, noOfSlides }) => {
   return (
     <Swiper
       modules={[A11y, Autoplay]}
       spaceBetween={50}
-      slidesPerView={3}
+      slidesPerView={noOfSlides}
       autoplay={{
         delay: 2000,
       }}
@@ -22,7 +22,7 @@ const Slider = ({ data }) => {
           spaceBetween: 40,
         },
         1024: {
-          slidesPerView: 3,
+          slidesPerView: `${noOfSlides}`,
           spaceBetween: 40,
         },
       }}
