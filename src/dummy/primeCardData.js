@@ -109,3 +109,18 @@ export const doctorsList = [
     image: "images/pngs/doctor-heena.png",
   },
 ];
+
+export const patientCodeEthics = [
+  {
+    label: "Stay Updated About Your Health",
+    image: "images/pngs/check.png",
+  },
+  {
+    label: "Check Your Results Online",
+    image: "images/pngs/check.png",
+  },
+  {
+    label: "Manage Your Appointments",
+    image: "images/pngs/check.png",
+  },
+];

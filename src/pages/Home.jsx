@@ -6,6 +6,7 @@ import {
   DiscountSection,
   Specialization,
   MedicalUtilities,
+  PatientCare,
 } from "../components/composer";
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
       <DiscountSection />
       <Specialization />
       <MedicalUtilities />
+      <PatientCare />
     </>
   );
 };
