@@ -10,6 +10,7 @@ import {
   Blog,
   FAQ,
   ServiceSection,
+  DownloadSection,
 } from "../components/composer";
 
 const Home = () => {
@@ -25,6 +26,7 @@ const Home = () => {
       <Blog />
       <ServiceSection />
       <FAQ />
+      <DownloadSection />
     </>
   );
 };
