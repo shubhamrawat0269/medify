@@ -3,10 +3,10 @@ import { Button } from "../composer";
 
 const DownloadSection = () => {
   return (
-    <div className="bg-blue-50 mt-10 mb-10">
+    <div className="bg-blue-50 mt-10">
       <div className="w-5/6 m-auto pt-10 md:grid md:grid-cols-2 md:items-center">
-        <div className="w-5/6 px-5 py-2 m-auto md:grid">
-          <div className="py-5 relative mb-5">
+        <div className="w-5/6 px-5 m-auto md:grid">
+          <div className="relative">
             <figure>
               <img src="images/pngs/bazel2.png" alt="" />
             </figure>
@@ -17,10 +17,13 @@ const DownloadSection = () => {
                 alt=""
               />
             </figure>
-            <figure className="absolute top-32 right-12">
+            <figure className="absolute right-12" style={{ top: "6rem" }}>
               <img src="images/pngs/bazel1.png" className="h-96" alt="" />
             </figure>
-            <figure className="absolute top-40" style={{ right: "2.2rem" }}>
+            <figure
+              className="absolute"
+              style={{ right: "2.2rem", top: "7.5rem" }}
+            >
               <img
                 src="images/pngs/mobile1.png"
                 style={{ width: "94%" }}
