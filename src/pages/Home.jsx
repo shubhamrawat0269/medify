@@ -7,6 +7,7 @@ import {
   Specialization,
   MedicalUtilities,
   PatientCare,
+  Blog,
 } from "../components/composer";
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
       <Specialization />
       <MedicalUtilities />
       <PatientCare />
+      <Blog />
     </>
   );
 };

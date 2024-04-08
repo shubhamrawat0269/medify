@@ -124,3 +124,30 @@ export const patientCodeEthics = [
     image: "images/pngs/check.png",
   },
 ];
+
+export const blogsData = [
+  {
+    category: "Medical",
+    date: "March 31, 2024",
+    title: "6 Tips to protect your Mental Health",
+    author: "Rebecca Princton",
+    profile: "images/pngs/user.png",
+    image: "images/pngs/detox.png",
+  },
+  {
+    category: "Medical",
+    date: "March 31, 2024",
+    title: "6 Tips to protect your Mental Health",
+    author: "Rebecca Princton",
+    profile: "images/pngs/user.png",
+    image: "images/pngs/detox.png",
+  },
+  {
+    category: "Medical",
+    date: "March 31, 2024",
+    title: "6 Tips to protect your Mental Health",
+    author: "Rebecca Princton",
+    profile: "images/pngs/user.png",
+    image: "images/pngs/detox.png",
+  },
+];
