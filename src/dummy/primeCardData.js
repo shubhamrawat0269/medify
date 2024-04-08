@@ -151,3 +151,26 @@ export const blogsData = [
     image: "images/pngs/detox.png",
   },
 ];
+
+export const serviceData = [
+  {
+    label: "Happy Patients",
+    numbers: 5000,
+    image: "images/pngs/Hospital.png",
+  },
+  {
+    label: "Hospitals",
+    numbers: 200,
+    image: "images/pngs/Hospital.png",
+  },
+  {
+    label: "Laboratories",
+    numbers: 1000,
+    image: "images/pngs/Hospital.png",
+  },
+  {
+    label: "Expert Doctors",
+    numbers: 700,
+    image: "images/pngs/Hospital.png",
+  },
+];

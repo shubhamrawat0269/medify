@@ -8,6 +8,7 @@ import {
   MedicalUtilities,
   PatientCare,
   Blog,
+  ServiceSection,
 } from "../components/composer";
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
       <MedicalUtilities />
       <PatientCare />
       <Blog />
+      <ServiceSection />
     </>
   );
 };
