@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../../assets/svgs/Logo";
 import { IoIosMenu } from "react-icons/io";
+import { Button } from "../composer";
 
 const Navbar = ({ bgColor }) => {
   return (
@@ -9,7 +10,7 @@ const Navbar = ({ bgColor }) => {
         <div>
           <Logo />
         </div>
-        <div className="hidden md:flex md:items-center md:gap-5">
+        <div className="hidden lg:flex md:items-center md:gap-5">
           <ol className="flex justify-center gap-5 text-sm font-bold">
             <li>Find Doctors</li>
             <li>Hospitals</li>
@@ -18,12 +19,17 @@ const Navbar = ({ bgColor }) => {
             <li>Software for Provider</li>
             <li>Facilities</li>
           </ol>
-          <button className="bg-blue-700 text-white p-2 pl-4 pr-4 rounded-md">
-            My Bookings
-          </button>
+          <Button
+            title="My Bookings"
+            bgColor="bg-blue-700"
+            color="text-white"
+            padding="p-2"
+            paddingLeft="pl-4"
+            paddingRight="pr-4"
+          />
         </div>
 
-        <div className="md:hidden cursor-pointer">
+        <div className="lg:hidden cursor-pointer">
           <IoIosMenu size={32} />
         </div>
       </div>
