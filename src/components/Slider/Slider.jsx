@@ -1,7 +1,49 @@
-import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { A11y, Autoplay } from "swiper/modules";
 
-const Slider = () => {
-  return <div>Slider</div>;
+import "swiper/css";
+
+const Slider = ({ data }) => {
+  return (
+    <Swiper
+      modules={[A11y, Autoplay]}
+      spaceBetween={50}
+      slidesPerView={3}
+      autoplay={{
+        delay: 1500,
+      }}
+      breakpoints={{
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        578: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+      }}
+      pagination={{ clickable: true }}
+      scrollbar={{ draggable: true }}
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log("slide change")}
+    >
+      {data.map((currSlide) => {
+        return (
+          <SwiperSlide key={currSlide.id}>
+            <img
+              className="w-full h-full"
+              src={currSlide.image}
+              alt={currSlide.id}
+            />
+          </SwiperSlide>
+        );
+      })}
+    </Swiper>
+  );
 };
 
 export default Slider;

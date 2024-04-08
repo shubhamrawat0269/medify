@@ -38,7 +38,7 @@ const HeroSection = () => {
       </div>
       <div className="w-full">
         <div className="bg-white lg:absolute lg:left-60 lg:top-3/4 lg:py-4 lg:px-20 rounded border">
-          <div className=" flex flex-col justify-center items-center p-5">
+          <div className=" flex flex-col md:flex-row justify-center items-center p-5">
             <SearchBox placeText="Search State" width={20} />
             <SearchBox placeText="Search City" width={20} />
             <Button

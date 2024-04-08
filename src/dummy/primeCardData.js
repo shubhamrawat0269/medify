@@ -20,3 +20,30 @@ export const cardData = [
     Icon: "images/pngs/Ambulance.png",
   },
 ];
+
+export const discountCarouselData = [
+  {
+    id: 1,
+    image: "images/pngs/service1.png",
+  },
+  {
+    id: 2,
+    image: "images/pngs/service1.png",
+  },
+  {
+    id: 3,
+    image: "images/pngs/service1.png",
+  },
+  {
+    id: 4,
+    image: "images/pngs/service1.png",
+  },
+  {
+    id: 5,
+    image: "images/pngs/service1.png",
+  },
+  {
+    id: 1,
+    image: "images/pngs/service1.png",
+  },
+];
