@@ -4,6 +4,7 @@ import {
   Navbar,
   HeroSection,
   DiscountSection,
+  Specialization,
 } from "../components/composer";
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
       <Navbar bgColor="bg-teal-50" />
       <HeroSection />
       <DiscountSection />
+      <Specialization />
     </>
   );
 };

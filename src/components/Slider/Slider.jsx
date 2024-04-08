@@ -10,7 +10,7 @@ const Slider = ({ data }) => {
       spaceBetween={50}
       slidesPerView={3}
       autoplay={{
-        delay: 1500,
+        delay: 2000,
       }}
       breakpoints={{
         0: {
@@ -35,7 +35,7 @@ const Slider = ({ data }) => {
         return (
           <SwiperSlide key={currSlide.id}>
             <img
-              className="w-full h-full"
+              className="w-full h-full rounded-xl"
               src={currSlide.image}
               alt={currSlide.id}
             />

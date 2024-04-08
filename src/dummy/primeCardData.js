@@ -21,6 +21,41 @@ export const cardData = [
   },
 ];
 
+export const specialisedCardData = [
+  {
+    label: "Dentistry",
+    Icon: "images/pngs/Doctor.png",
+  },
+  {
+    label: "Primary Care",
+    Icon: "images/pngs/Capsule.png",
+  },
+  {
+    label: "Cardiology",
+    Icon: "images/pngs/Hospital.png",
+  },
+  {
+    label: "MRI Resonance",
+    Icon: "images/pngs/Drugstore.png",
+  },
+  {
+    label: "Blood Test",
+    Icon: "images/pngs/Ambulance.png",
+  },
+  {
+    label: "Piscologist",
+    Icon: "images/pngs/Ambulance.png",
+  },
+  {
+    label: "Laboratory",
+    Icon: "images/pngs/Ambulance.png",
+  },
+  {
+    label: "X ray",
+    Icon: "images/pngs/Ambulance.png",
+  },
+];
+
 export const discountCarouselData = [
   {
     id: 1,
