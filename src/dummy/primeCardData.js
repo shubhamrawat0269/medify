@@ -174,3 +174,26 @@ export const serviceData = [
     image: "images/pngs/Hospital.png",
   },
 ];
+
+export const accordionQuestionsList = [
+  {
+    label: "How to get appointment for emergency",
+    numbers:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus similique alias neque nemo cupiditate accusantium ullam minima molestias officiis laboriosam.",
+  },
+  {
+    label: "How to get appointment for emergency",
+    numbers:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus similique alias neque nemo cupiditate accusantium ullam minima molestias officiis laboriosam.",
+  },
+  {
+    label: "How to get appointment for emergency",
+    numbers:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus similique alias neque nemo cupiditate accusantium ullam minima molestias officiis laboriosam.",
+  },
+  {
+    label: "How to get appointment for emergency",
+    numbers:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus similique alias neque nemo cupiditate accusantium ullam minima molestias officiis laboriosam.",
+  },
+];
