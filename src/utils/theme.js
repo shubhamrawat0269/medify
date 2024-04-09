@@ -9,7 +9,7 @@ const { definePartsStyle, defineMultiStyleConfig } =
 const baseStyle = definePartsStyle({
   // define the part you're going to style
   tab: {
-    fontWeight: "semibold", // change the font weight
+    fontWeight: "normal", // change the font weight
   },
   tabpanel: {
     fontFamily: "mono", // change the font family
@@ -21,12 +21,12 @@ const sizes = {
     // define the parts that will change for each size
     tab: {
       fontSize: "xl",
-      py: "4",
-      px: "6",
+      py: "1",
+      px: "10",
     },
     tabpanel: {
-      py: "4",
-      px: "6",
+      py: "2",
+      px: "4",
     },
   }),
 };
@@ -44,22 +44,17 @@ const colorfulVariant = definePartsStyle((props) => {
 
   return {
     tab: {
-      border: "2px solid",
-      borderColor: "transparent",
-      bg: mode(`${c}.300`, `${c}.600`)(props),
-      borderTopRadius: "lg",
-      borderBottom: "none",
+      borderColor: "grey",
       _selected: {
-        bg: mode("#fff", "gray.800")(props),
+        borderBottom: "2px solid",
         color: mode(`${c}.500`, `${c}.300`)(props),
-        borderColor: "inherit",
-        borderBottom: "none",
-        mb: "-2px",
+        borderColor: "green",
       },
     },
     tablist: {
-      borderBottom: "2x solid",
-      borderColor: "inherit",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
     },
     tabpanel: {
       border: "2px solid",
