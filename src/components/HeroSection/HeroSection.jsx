@@ -1,8 +1,22 @@
-import React from "react";
+import { endpoint } from "../../utils";
 import { Button, Card, SearchBox } from "../composer";
 import { cardData } from "../../dummy/primeCardData";
+import { useFetchStates } from "../../hooks/useFetchStates";
+import { useContext } from "react";
+import { PatientContext } from "../../contexts/PatientContext";
+import { useFetchCities } from "../../hooks/useFetchCities";
 
 const HeroSection = () => {
+  const { selectedState, setSelectedState, selectedCity, setSelectedCity } =
+    useContext(PatientContext);
+  const { states, error } = useFetchStates(endpoint);
+  const { cities, cityError } = useFetchCities(selectedState, endpoint);
+  // const { data, dataError } = useFetchHospitalDetails(
+  //   selectedState,
+  //   selectedCity,
+  //   endpoint
+  // );
+
   return (
     <div className="bg-teal-50  lg:relative">
       <div className="pt-0 pr-0 pl-0 pb-36 w-5/6 m-auto md:flex md:justify-between md:items-center md:gap-5">
@@ -39,8 +53,22 @@ const HeroSection = () => {
       <div className="w-full">
         <div className="bg-white lg:absolute lg:inset-x-64 lg:top-96 lg:py-4 lg:px-20 rounded border">
           <div className=" flex flex-col md:flex-row justify-center items-center p-5">
-            <SearchBox placeText="Search State" width={20} />
-            <SearchBox placeText="Search City" width={20} />
+            <SearchBox
+              placeText="Search State"
+              width={20}
+              label={selectedState}
+              dispatch={setSelectedState}
+              data={states}
+              error={error}
+            />
+            <SearchBox
+              placeText="Search City"
+              width={20}
+              label={selectedCity}
+              dispatch={setSelectedCity}
+              data={cities}
+              error={cityError}
+            />
             <Button
               title="Search"
               bgColor="bg-blue-700"

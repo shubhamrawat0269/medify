@@ -4,6 +4,7 @@ import { Footer } from "../components/composer";
 import { extendTheme } from "@chakra-ui/react";
 import { ChakraProvider } from "@chakra-ui/react";
 import { tabsTheme } from "../utils/theme";
+import { PatientProvider } from "../contexts/PatientContext";
 
 const theme = extendTheme({
   components: {
@@ -13,10 +14,12 @@ const theme = extendTheme({
 
 const Layout = () => {
   return (
-    <ChakraProvider theme={theme}>
-      <Outlet />
-      <Footer />
-    </ChakraProvider>
+    <PatientProvider>
+      <ChakraProvider theme={theme}>
+        <Outlet />
+        <Footer />
+      </ChakraProvider>
+    </PatientProvider>
   );
 };
 

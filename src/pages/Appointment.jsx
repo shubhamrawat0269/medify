@@ -13,7 +13,7 @@ const Appointment = () => {
     <div>
       <NotificationModal msg={appointmentAdvice} />
       <Navbar bgColor="bg-white" />
-      <BookingSearchWrapper />
+      <BookingSearchWrapper width={20} />
       <HospitalDetailGrid status="appointment-fix" />
       <DownloadSection />
     </div>

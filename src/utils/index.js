@@ -9,3 +9,5 @@ export const bookingStatus = {
   APPOINTMENT_FIX: "appointment-fix",
   APPOINTMENT_NOT_FIX: "appointment-not-fix",
 };
+
+export const endpoint = `https://meddata-backend.onrender.com`;
