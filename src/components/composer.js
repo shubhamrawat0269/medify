@@ -15,6 +15,7 @@ import SearchBox from "./SearchBox/SearchBox";
 import ServiceSection from "./ServiceSection/ServiceSection";
 import Slider from "./Slider/Slider";
 import Specialization from "./Specialization/Specialization";
+import UserSearchWrapper from "./UserSearchWrapper/UserSearchWrapper";
 
 export {
   Blog,
@@ -34,4 +35,5 @@ export {
   ServiceSection,
   Slider,
   Specialization,
+  UserSearchWrapper,
 };

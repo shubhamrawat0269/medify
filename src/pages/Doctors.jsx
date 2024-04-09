@@ -1,5 +1,11 @@
 import React from "react";
-import { Navbar, NotificationModal } from "../components/composer";
+import {
+  DownloadSection,
+  FAQ,
+  Navbar,
+  NotificationModal,
+  UserSearchWrapper,
+} from "../components/composer";
 import { doctorsAdvice } from "../utils";
 
 const Doctors = () => {
@@ -7,6 +13,9 @@ const Doctors = () => {
     <>
       <NotificationModal msg={doctorsAdvice} />
       <Navbar bgColor="bg-white" />
+      <UserSearchWrapper />
+      <FAQ />
+      <DownloadSection />
     </>
   );
 };
