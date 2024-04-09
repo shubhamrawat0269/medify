@@ -21,94 +21,55 @@ const TabComp = () => {
       <TabPanels>
         <TabPanel>
           <div className="mt-5 mb-5">
-            <div className="flex gap-10 items-center mb-3">
-              <div className="text-sm font-bold w-28">Monday</div>
-              <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
-                <span>10:30AM</span>
-              </button>
-            </div>
-            <div className="flex gap-10 items-center  mb-3">
-              <div className="text-sm font-bold w-28">Tuesday</div>
-              <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
-                <span>10:30AM</span>
-              </button>
-              <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
-                <span>10:30AM</span>
-              </button>
-              <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
-                <span>10:30AM</span>
-              </button>
-            </div>
-            <div className="flex gap-10 items-center  mb-3">
-              <div className="text-sm font-bold w-28">Wednesday</div>
-              <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
-                <span>10:30AM</span>
-              </button>
-              <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
-                <span>10:30AM</span>
-              </button>
-              <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
-                <span>10:30AM</span>
-              </button>
-              <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
-                <span>10:30AM</span>
-              </button>
+            <div className="flex flex-wrap gap-2 md:gap-10 items-center mb-3">
+              <div className="text-sm font-bold w-12">Monday</div>
+              <div className="flex items-center gap-2">
+                <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
+                  <span>10:30AM</span>
+                </button>
+                <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
+                  <span>10:30AM</span>
+                </button>
+                <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
+                  <span>10:30AM</span>
+                </button>
+              </div>
             </div>
           </div>
         </TabPanel>
         <TabPanel>
           <div className="mt-5 mb-5">
-            <div className="flex gap-10 items-center mb-3">
-              <div className="text-sm font-bold w-28">Monday</div>
-              <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
-                <span>10:30AM</span>
-              </button>
-            </div>
-            <div className="flex gap-10 items-center  mb-3">
-              <div className="text-sm font-bold w-28">Tuesday</div>
-              <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
-                <span>10:30AM</span>
-              </button>
-            </div>
-            <div className="flex gap-10 items-center  mb-3">
-              <div className="text-sm font-bold w-28">Wednesday</div>
-              <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
-                <span>10:30AM</span>
-              </button>
-              <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
-                <span>10:30AM</span>
-              </button>
-              <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
-                <span>10:30AM</span>
-              </button>
+            <div className="flex flex-wrap gap-2 md:gap-10 items-center mb-3">
+              <div className="text-sm font-bold w-12">Monday</div>
+              <div className="flex items-center gap-2">
+                <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
+                  <span>10:30AM</span>
+                </button>
+                <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
+                  <span>10:30AM</span>
+                </button>
+                <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
+                  <span>10:30AM</span>
+                </button>
+              </div>
             </div>
           </div>
         </TabPanel>
         <TabPanel>
           <div className="mt-5 mb-5">
-            <div className="flex gap-10 items-center mb-3">
-              <div className="text-sm font-bold w-28">Monday</div>
-              <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
-                <span>10:30AM</span>
-              </button>
-            </div>
-            <div className="flex gap-10 items-center  mb-3">
-              <div className="text-sm font-bold w-28">Tuesday</div>
-              <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
-                <span>10:30AM</span>
-              </button>
-              <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
-                <span>10:30AM</span>
-              </button>
-            </div>
-            <div className="flex gap-10 items-center  mb-3">
-              <div className="text-sm font-bold w-28">Wednesday</div>
-              <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
-                <span>10:30AM</span>
-              </button>
-              <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
-                <span>10:30AM</span>
-              </button>
+            <div className="flex flex-wrap gap-2 md:gap-10 items-center mb-3">
+              <div className="text-sm font-bold w-12">Monday</div>
+              <div className="flex items-center gap-2">
+                <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
+                  <span>10:30AM</span>
+                </button>
+                <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
+                  <span>10:30AM</span>
+                </button>
+                <button className="text-blue-500 border-blue-500 border-2 px-5 py-1">
+                  <span>10:30AM</span>
+                </button>
+              </div>
             </div>
           </div>
         </TabPanel>
