@@ -5,8 +5,10 @@ import { useFetchStates } from "../../hooks/useFetchStates";
 import { useContext } from "react";
 import { PatientContext } from "../../contexts/PatientContext";
 import { useFetchCities } from "../../hooks/useFetchCities";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   const { selectedState, setSelectedState, selectedCity, setSelectedCity } =
     useContext(PatientContext);
   const { states, error } = useFetchStates(endpoint);
@@ -16,6 +18,10 @@ const HeroSection = () => {
   //   selectedCity,
   //   endpoint
   // );
+
+  const handleSearch = () => {
+    navigate("/doctors");
+  };
 
   return (
     <div className="bg-teal-50  lg:relative">
@@ -76,6 +82,7 @@ const HeroSection = () => {
               padding="p-2"
               paddingLeft="pl-4"
               paddingRight="pr-4"
+              onBtnClick={handleSearch}
             />
           </div>
           <div className="flex flex-col items-center justify-center gap-10">

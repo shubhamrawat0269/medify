@@ -5,6 +5,7 @@ const PatientContext = createContext();
 const PatientProvider = ({ children }) => {
   const [selectedState, setSelectedState] = useState("");
   const [selectedCity, setSelectedCity] = useState("");
+
   const context = {
     selectedState,
     setSelectedState,
