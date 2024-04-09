@@ -48,9 +48,6 @@ const HospitalDetailCard = ({ status }) => {
                 </button>
               </div>
             </div>
-            <div style={{ display: "none" }}>
-              <TabComp />
-            </div>
           </div>
         );
       }
@@ -100,7 +97,7 @@ const HospitalDetailCard = ({ status }) => {
                 />
               </div>
             </div>
-            <div style={{ display: "none" }}>
+            <div>
               <TabComp />
             </div>
           </div>
