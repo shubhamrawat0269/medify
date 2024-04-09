@@ -9,7 +9,6 @@ import {
   PatientCare,
   Blog,
   FAQ,
-  Footer,
   ServiceSection,
   DownloadSection,
 } from "../components/composer";
@@ -28,7 +27,6 @@ const Home = () => {
       <ServiceSection />
       <FAQ />
       <DownloadSection />
-      <Footer />
     </>
   );
 };
