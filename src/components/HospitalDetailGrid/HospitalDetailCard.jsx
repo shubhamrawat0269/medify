@@ -97,7 +97,7 @@ const HospitalDetailCard = ({
                 </div>
                 <div className="bg-green-800 text-white w-10 flex items-center justify-around rounded-lg px-1">
                   <img src="images/pngs/thumbs.png" alt="thumbs" />
-                  <span>{rating}</span>
+                  {isNaN(rating) ? "" : <span>{rating}</span>}
                 </div>
               </div>
               <div className="flex flex-col items-center justify-end gap-3">

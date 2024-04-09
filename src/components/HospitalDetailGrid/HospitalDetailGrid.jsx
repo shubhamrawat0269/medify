@@ -43,7 +43,7 @@ const HospitalDetailGrid = ({ status }) => {
         {status === bookingStatus.APPOINTMENT_NOT_FIX && (
           <div>
             <h2 className="text-center font-bold text-lg md:text-left mt-2 mb-2">
-              15 Medical Centers Availabel in {selectedState}
+              {hospitalList.length} Medical Centers Availabel in {selectedState}
             </h2>
             <div className="flex items-center gap-2 mb-5">
               <figure>

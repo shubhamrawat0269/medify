@@ -2,7 +2,7 @@ import { endpoint } from "../../utils";
 import { Button, Card, SearchBox } from "../composer";
 import { cardData } from "../../dummy/primeCardData";
 import { useFetchStates } from "../../hooks/useFetchStates";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { PatientContext } from "../../contexts/PatientContext";
 import { useFetchCities } from "../../hooks/useFetchCities";
 import { useFetchHospitalDetails } from "../../hooks/useFetchHospitalDetails";
