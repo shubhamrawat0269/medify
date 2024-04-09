@@ -5,22 +5,32 @@ import { useFetchStates } from "../../hooks/useFetchStates";
 import { useContext } from "react";
 import { PatientContext } from "../../contexts/PatientContext";
 import { useFetchCities } from "../../hooks/useFetchCities";
+import { useFetchHospitalDetails } from "../../hooks/useFetchHospitalDetails";
 import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
   const navigate = useNavigate();
-  const { selectedState, setSelectedState, selectedCity, setSelectedCity } =
-    useContext(PatientContext);
+  const {
+    selectedState,
+    setSelectedState,
+    selectedCity,
+    setSelectedCity,
+    setHospitalList,
+  } = useContext(PatientContext);
   const { states, error } = useFetchStates(endpoint);
   const { cities, cityError } = useFetchCities(selectedState, endpoint);
-  // const { data, dataError } = useFetchHospitalDetails(
-  //   selectedState,
-  //   selectedCity,
-  //   endpoint
-  // );
+  const { data, dataError } = useFetchHospitalDetails(
+    selectedState,
+    selectedCity,
+    endpoint
+  );
 
   const handleSearch = () => {
-    navigate("/doctors");
+    if (selectedState && selectedCity) {
+      // console.log({ data, dataError });
+      setHospitalList(data);
+      navigate("/doctors");
+    }
   };
 
   return (

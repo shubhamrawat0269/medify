@@ -2,7 +2,22 @@ import React from "react";
 import { Button } from "../composer";
 import TabComp from "./TabComp";
 
-const HospitalDetailCard = ({ status }) => {
+// For Ref
+// name = { name };
+// address = { address };
+// city = { City };
+// state = { State };
+// zip = { zip };
+// rating = { rating };
+const HospitalDetailCard = ({
+  status,
+  name,
+  address,
+  city,
+  state,
+  zip,
+  rating,
+}) => {
   const getPatientDetail = (status) => {
     switch (status) {
       case "appointment-fix": {
@@ -65,12 +80,12 @@ const HospitalDetailCard = ({ status }) => {
                 </div>
               </div>
               <div>
-                <h3 className="font-bold text-blue-400">
-                  Fortis Hospital Richmond Road
-                </h3>
-                <h4 className="text-sm font-bold">Banglore, Karnataka</h4>
+                <h3 className="font-bold text-blue-400">{name}</h3>
+                <h4 className="text-sm font-bold">
+                  {state}, {city}
+                </h4>
                 <p className="text-sm">
-                  Smilessence Center for Advanced Dentistry
+                  {address}, {zip}
                 </p>
                 <div className="flex gap-3 items-center my-3">
                   <span className="text-sm font-bold text-green-600">FREE</span>
@@ -82,7 +97,7 @@ const HospitalDetailCard = ({ status }) => {
                 </div>
                 <div className="bg-green-800 text-white w-10 flex items-center justify-around rounded-lg px-1">
                   <img src="images/pngs/thumbs.png" alt="thumbs" />
-                  <span>5</span>
+                  <span>{rating}</span>
                 </div>
               </div>
               <div className="flex flex-col items-center justify-end gap-3">
