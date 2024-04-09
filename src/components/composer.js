@@ -6,7 +6,7 @@ import DownloadSection from "./DownloadSection/DownloadSection";
 import FAQ from "./FAQ/FAQ";
 import Footer from "./Footer/Footer";
 import HeroSection from "./HeroSection/HeroSection";
-import HospitalDetailCard from "./HospitalDetailCard/HospitalDetailCard";
+import HospitalDetailGrid from "./HospitalDetailGrid/HospitalDetailGrid";
 import MedicalUtilities from "./MedicalUtilities/MedicalUtilities";
 import Navbar from "./Navbar/Navbar";
 import NotificationModal from "./NotificationModal/NotificationModal";
@@ -26,7 +26,7 @@ export {
   FAQ,
   Footer,
   HeroSection,
-  HospitalDetailCard,
+  HospitalDetailGrid,
   MedicalUtilities,
   Navbar,
   NotificationModal,

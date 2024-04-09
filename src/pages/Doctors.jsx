@@ -2,6 +2,7 @@ import React from "react";
 import {
   DownloadSection,
   FAQ,
+  HospitalDetailGrid,
   Navbar,
   NotificationModal,
   UserSearchWrapper,
@@ -14,6 +15,7 @@ const Doctors = () => {
       <NotificationModal msg={doctorsAdvice} />
       <Navbar bgColor="bg-white" />
       <UserSearchWrapper />
+      <HospitalDetailGrid />
       <FAQ />
       <DownloadSection />
     </>
