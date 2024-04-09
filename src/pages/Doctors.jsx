@@ -15,7 +15,7 @@ const Doctors = () => {
       <NotificationModal msg={doctorsAdvice} />
       <Navbar bgColor="bg-white" />
       <UserSearchWrapper />
-      <HospitalDetailGrid />
+      <HospitalDetailGrid status="appointment-not-fix" />
       <FAQ />
       <DownloadSection />
     </>

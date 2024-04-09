@@ -16,6 +16,7 @@ import ServiceSection from "./ServiceSection/ServiceSection";
 import Slider from "./Slider/Slider";
 import Specialization from "./Specialization/Specialization";
 import UserSearchWrapper from "./UserSearchWrapper/UserSearchWrapper";
+import BookingSearchWrapper from "./BookingSearchWrapper/BookingSearchWrapper";
 
 export {
   Blog,
@@ -35,5 +36,6 @@ export {
   ServiceSection,
   Slider,
   Specialization,
+  BookingSearchWrapper,
   UserSearchWrapper,
 };

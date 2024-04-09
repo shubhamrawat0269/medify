@@ -1,7 +1,23 @@
 import React from "react";
+import { appointmentAdvice } from "../utils";
+import {
+  DownloadSection,
+  HospitalDetailGrid,
+  Navbar,
+  NotificationModal,
+  BookingSearchWrapper,
+} from "../components/composer";
 
 const Appointment = () => {
-  return <div>Appointment</div>;
+  return (
+    <div>
+      <NotificationModal msg={appointmentAdvice} />
+      <Navbar bgColor="bg-white" />
+      <BookingSearchWrapper />
+      <HospitalDetailGrid status="appointment-fix" />
+      <DownloadSection />
+    </div>
+  );
 };
 
 export default Appointment;
