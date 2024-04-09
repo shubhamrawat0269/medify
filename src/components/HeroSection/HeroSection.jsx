@@ -4,7 +4,7 @@ import { cardData } from "../../dummy/primeCardData";
 
 const HeroSection = () => {
   return (
-    <div className="bg-teal-50">
+    <div className="bg-teal-50  lg:relative">
       <div className="pt-0 pr-0 pl-0 pb-36 w-5/6 m-auto md:flex md:justify-between md:items-center md:gap-5">
         <div>
           <h1 className="text-center font-extrabold md:text-left">
@@ -37,7 +37,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="w-full">
-        <div className="bg-white lg:absolute lg:left-60 lg:top-3/4 lg:py-4 lg:px-20 rounded border">
+        <div className="bg-white lg:absolute lg:inset-x-64 lg:top-96 lg:py-4 lg:px-20 rounded border">
           <div className=" flex flex-col md:flex-row justify-center items-center p-5">
             <SearchBox placeText="Search State" width={20} />
             <SearchBox placeText="Search City" width={20} />
